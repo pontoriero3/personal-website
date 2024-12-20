@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background: linear-gradient(180deg, #f9f9f9, #e8f6f3);
     color: #2c3e50;
 }
 
@@ -35,11 +35,13 @@ header ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
     transition: color 0.3s;
 }
 
 header ul li a:hover {
-    color: #16a085;
+    color: #ecf0f1;
+    text-shadow: 0 0 8px #16a085;
 }
 
 /* Section Styles */
@@ -47,9 +49,10 @@ section {
     padding: 40px;
     margin: 20px auto;
     max-width: 900px;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
@@ -57,7 +60,7 @@ section h2 {
     border-bottom: 3px solid #1abc9c;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .intro {
@@ -66,24 +69,26 @@ section h2 {
 }
 
 .intro h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 10px;
-    color: #1abc9c;
+    color: #16a085;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .intro p {
     font-size: 1.2rem;
     color: #7f8c8d;
+    font-style: italic;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 15px 0;
-    background: #2c3e50;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
     color: #ecf0f1;
     margin-top: 50px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 footer p {
@@ -93,19 +98,20 @@ footer p {
 /* Button Styles */
 a.button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 25px;
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     background: linear-gradient(135deg, #1abc9c, #16a085);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background 0.3s, transform 0.2s;
 }
 
 a.button:hover {
     background: linear-gradient(135deg, #16a085, #1abc9c);
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
