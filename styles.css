@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background: #1abc9c;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
     color: #fff;
     padding: 1rem 0;
     text-align: center;
@@ -97,14 +97,15 @@ a.button {
     margin-top: 20px;
     font-size: 1rem;
     color: #fff;
-    background: #1abc9c;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 a.button:hover {
-    background: #16a085;
+    background: linear-gradient(135deg, #16a085, #1abc9c);
+    transform: scale(1.05);
 }
 
 /* Responsive Design */
